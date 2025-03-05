@@ -65,7 +65,7 @@ const Register: React.FC = () => {
             type="email"
             id="email"
             {...register('email')}
-            className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="w-full px-3 py-2 border rounded-md focus:outline-hidden focus:ring-2 focus:ring-indigo-500"
           />
           {errors.email && (
             <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>
@@ -79,7 +79,7 @@ const Register: React.FC = () => {
             type="password"
             id="password"
             {...register('password')}
-            className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="w-full px-3 py-2 border rounded-md focus:outline-hidden focus:ring-2 focus:ring-indigo-500"
           />
           {errors.password && (
             <p className="mt-1 text-sm text-red-600">{errors.password.message}</p>
@@ -93,7 +93,7 @@ const Register: React.FC = () => {
             type="password"
             id="confirmPassword"
             {...register('confirmPassword')}
-            className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="w-full px-3 py-2 border rounded-md focus:outline-hidden focus:ring-2 focus:ring-indigo-500"
           />
           {errors.confirmPassword && (
             <p className="mt-1 text-sm text-red-600">{errors.confirmPassword.message}</p>

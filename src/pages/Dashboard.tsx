@@ -39,7 +39,7 @@ const Dashboard: React.FC = () => {
           <motion.div
             key={survey.id}
             whileHover={{ scale: 1.02 }}
-            className="bg-white p-6 rounded-lg shadow-sm"
+            className="bg-white p-6 rounded-lg shadow-xs"
           >
             <h3 className="text-lg font-semibold mb-4">{survey.title}</h3>
             <p className="text-gray-600 mb-4">{survey.questions.length} questions</p>

@@ -61,14 +61,14 @@ const SurveyTake: React.FC<SurveyTakeProps> = ({ id, isPreview = false }) => {
       transition={{ duration: 0.5 }}
     >
       <h1 className="text-2xl font-semibold mb-6">{survey.title}</h1>
-      <div className="bg-white p-6 rounded-lg shadow-sm">
+      <div className="bg-white p-6 rounded-lg shadow-xs">
         <h2 className="text-xl font-semibold mb-4">
           Question {currentQuestionIndex + 1} of {survey.questions.length}
         </h2>
         <p className="text-lg mb-4">{currentQuestion.text}</p>
         {currentQuestion.type === 'text' && (
           <textarea
-            className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400"
+            className="w-full px-3 py-2 border rounded-md focus:outline-hidden focus:ring-2 focus:ring-gray-400"
             rows={4}
             value={answers[currentQuestion.id] as string || ''}
             onChange={(e) => handleAnswer(e.target.value)}

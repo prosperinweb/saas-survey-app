@@ -33,7 +33,7 @@ const SurveyPreview: React.FC = () => {
           Back to Dashboard
         </button>
       </div>
-      <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
+      <div className="bg-white p-6 rounded-lg shadow-xs mb-6">
         <SurveyTake id={id} isPreview={true} />
       </div>
       <DeploySurvey surveyId={id} />

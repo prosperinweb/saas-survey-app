@@ -46,7 +46,7 @@ const Home: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
-          className="bg-white p-6 rounded-lg shadow-sm"
+          className="bg-white p-6 rounded-lg shadow-xs"
         >
           <CheckCircle className="w-12 h-12 text-gray-800 mx-auto mb-4" />
           <h3 className="text-xl font-semibold mb-2">Easy to Use</h3>
@@ -58,7 +58,7 @@ const Home: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.8 }}
-          className="bg-white p-6 rounded-lg shadow-sm"
+          className="bg-white p-6 rounded-lg shadow-xs"
         >
           <BarChart2 className="w-12 h-12 text-gray-800 mx-auto mb-4" />
           <h3 className="text-xl font-semibold mb-2">Powerful Analytics</h3>
@@ -70,7 +70,7 @@ const Home: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 1 }}
-          className="bg-white p-6 rounded-lg shadow-sm"
+          className="bg-white p-6 rounded-lg shadow-xs"
         >
           <Users className="w-12 h-12 text-gray-800 mx-auto mb-4" />
           <h3 className="text-xl font-semibold mb-2">Collaboration</h3>

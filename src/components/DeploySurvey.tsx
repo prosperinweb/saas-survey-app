@@ -55,7 +55,7 @@ const DeploySurvey: React.FC<DeploySurveyProps> = ({ surveyId }) => {
               type="text"
               value={deployLink}
               readOnly
-              className="flex-grow px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400"
+              className="grow px-3 py-2 border rounded-md focus:outline-hidden focus:ring-2 focus:ring-gray-400"
             />
             <motion.button
               whileHover={{ scale: 1.05 }}

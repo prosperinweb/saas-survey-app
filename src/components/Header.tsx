@@ -20,7 +20,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-white dark:bg-gray-800 shadow-sm">
+    <header className="bg-white dark:bg-gray-800 shadow-xs">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link to="/" className="text-xl font-semibold text-gray-800 dark:text-white">
           SurveySaaS
@@ -55,7 +55,7 @@ const Header: React.FC = () => {
               </Link>
               <Link
                 to="/register"
-                className="bg-gray-800 dark:bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-700 dark:hover:bg-gray-500"
+                className="bg-gray-800 dark:bg-gray-600 text-white px-4 py-2 rounded-sm hover:bg-gray-700 dark:hover:bg-gray-500"
               >
                 Sign Up
               </Link>

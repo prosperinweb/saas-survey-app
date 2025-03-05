@@ -91,7 +91,7 @@ const SurveyBuilder: React.FC = () => {
             type="text"
             id="title"
             {...register('title')}
-            className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400 dark:bg-gray-700 dark:border-gray-600"
+            className="w-full px-3 py-2 border rounded-md focus:outline-hidden focus:ring-2 focus:ring-gray-400 dark:bg-gray-700 dark:border-gray-600"
           />
           {errors.title && (
             <p className="mt-1 text-sm text-red-600">{errors.title.message}</p>
@@ -106,7 +106,7 @@ const SurveyBuilder: React.FC = () => {
             type="date"
             id="expirationDate"
             {...register('expirationDate')}
-            className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400 dark:bg-gray-700 dark:border-gray-600"
+            className="w-full px-3 py-2 border rounded-md focus:outline-hidden focus:ring-2 focus:ring-gray-400 dark:bg-gray-700 dark:border-gray-600"
           />
         </div>
 
@@ -118,7 +118,7 @@ const SurveyBuilder: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3 }}
-              className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm"
+              className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-xs"
             >
               <div className="flex justify-between items-center mb-2">
                 <h3 className="text-lg font-medium">Question {index + 1}</h3>
@@ -134,7 +134,7 @@ const SurveyBuilder: React.FC = () => {
               <div className="space-y-2">
                 <select
                   {...register(`questions.${index}.type`)}
-                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400 dark:bg-gray-700 dark:border-gray-600"
+                  className="w-full px-3 py-2 border rounded-md focus:outline-hidden focus:ring-2 focus:ring-gray-400 dark:bg-gray-700 dark:border-gray-600"
                 >
                   <option value="text">Text</option>
                   <option value="multiple_choice">Multiple Choice</option>
@@ -144,7 +144,7 @@ const SurveyBuilder: React.FC = () => {
                   type="text"
                   {...register(`questions.${index}.text`)}
                   placeholder="Enter question text"
-                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400 dark:bg-gray-700 dark:border-gray-600"
+                  className="w-full px-3 py-2 border rounded-md focus:outline-hidden focus:ring-2 focus:ring-gray-400 dark:bg-gray-700 dark:border-gray-600"
                 />
                 {errors.questions?.[index]?.text && (
                   <p className="mt-1 text-sm text-red-600">
@@ -159,7 +159,7 @@ const SurveyBuilder: React.FC = () => {
                         type="text"
                         {...register(`questions.${index}.options.${optionIndex}`)}
                         placeholder={`Option ${optionIndex + 1}`}
-                        className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400 dark:bg-gray-700 dark:border-gray-600"
+                        className="w-full px-3 py-2 border rounded-md focus:outline-hidden focus:ring-2 focus:ring-gray-400 dark:bg-gray-700 dark:border-gray-600"
                       />
                     ))}
                   </div>
